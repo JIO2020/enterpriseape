@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enterpriseape</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= link_to "Home", root_path %>
+  <%= link_to "About Us", welcomes_about_path %>
+  <%= link_to "Contact", welcomes_contact_path %>
+  <%= link_to "Features", welcomes_features_path %>
+  <%= link_to "FAQs", welcomes_faqs_path %>
+  <%= link_to "Pricing", welcomes_pricing_path %>
+  <%= link_to "Invoices", invoices_index_path %>
+  <%= link_to "Login", welcomes_login_path %>
+  
+<%= yield %>
+
+</body>
+</html>
