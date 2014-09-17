@@ -10,3 +10,5 @@ class CreateInvoices < ActiveRecord::Migration
     end
   end
 end
+
+
